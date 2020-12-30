@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="my second form">
+	<meta name="author" content="Okoth Samuel Wanjare">
+	<title>SignUp form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+
+	<!--My header goes here-->
+		<header>
+			This form uses JS validation
+			<span id="time"></span> &nbsp; &nbsp;
+			<span id="hr"></span>
+		</header>
+
+		<br> <br>
+    
+    <!--My second form goes here -->
+        <form class="form" method="POST" action=" ">
+
+        	<label>First Name</label>
+		    <input type="text" name="fname" autofocus>
+		    <span id="error1"></span>
+
+		    <label>Last Name</label>
+		    <input type="text" name="lname" >
+		    <span id="error2"></span>
+		    
+
+		    <label>Email</label>
+		    <input type="email" name="email" >
+		    <span id="error3"></span>
+
+		    <label>Password</label>
+		    <input type="password" name="passcode" >
+		    <span id="error5"></span>
+		    
+
+		    <label>Confirm Password</label>
+		    <input type="password" name="confirm_passcode" >
+		    <span id="error6"></span>
+
+		    <button type="submit">Login</button>
+		    
+        	
+        </form>
+		
+        <br>
+
+		<footer>
+			<h3>&copy; <span id="date"></span> MagpinyBO&trade;</h3>
+		</footer>
+		
+	</div>
+
+<!-- JavaScript form validation file goes here -->
+<script type="text/javascript" src="./form2.js" async></script>
+</body>
+</html>
+
+

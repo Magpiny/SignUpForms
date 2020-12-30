@@ -1,0 +1,105 @@
+<!--
+It was fun working on this project
+So far my best zero tutorials project
+HTML form with both HTML inbuilt validation and JavaScript validation
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta tags-->
+	<meta charset="utf-8">
+	<!--Layout control-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Client side form validation using html and JavaScript">
+	<meta name="application-name" content="Details Form">
+	<meta name="author" content="Samuel Okoth Wanjare">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--status bar & address bar colors-->
+	<meta name="theme-color" content="#5A9765">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#5A9765">
+
+	<title>Details form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<h1>forms heading</h1> &nbsp;&nbsp;&nbsp;&nbsp;
+			<h4>Time should be here</h4>
+		</header>
+		<br>
+
+		<!--My form goes here -->
+		<form name="myform" method="POST" onsubmit="return validate();"  enctype="multipart/form-data" novalidate>
+			<caption>Kindly fill in all the fields with <small>*</small></caption>
+			<br><br>
+			<label>First Name</label>
+			<input type="text" name="fname" minlength="2" maxlength="17" autofocus required><small> &nbsp;*</small>
+			<br>
+			<span id="error1"></span>
+			<br><br>
+
+			<label>Last Name</label>
+			<input type="text" name="lname" minlength="2" maxlength="17">
+			<br>
+			<span id="error2"></span>
+			<br><br>
+
+			<label>Email </label>
+			<input type="email" name="email" placeholder="xyz@fmail.com" required><small> &nbsp;*</small>
+			<br>
+			<span id="error3"></span>
+			<br><br>
+
+			<label for="passport">Passport/ID No:</label>
+			<input type="number" name="passport" minlength="6" maxlength="12" min="0" required><small> &nbsp;*</small>
+			<br>
+			<span id="error4"></span>
+			<br><br>
+
+			<label>Upload your CV</label>
+			<input type="file" accept=".doc, .docx, .pdf" name="file" multiple required> <small> &nbsp;*</small>
+			<br>
+			<span id="error5"></span>
+			<br><br>
+
+			<label>Date of Birth</label>
+			<input type="date" name="date">
+			<br>
+			<span id="error6"></span>
+			<br><br>
+
+			<label>Portfolio site </label>
+			<input type="url" name="site">
+			<br>
+			<span id="error7"></span>
+			<br><br>
+
+			<label>Passpot Photo</label>
+			<input type="file" name="image" accept="image/*" required>
+			<br> <small> &nbsp;*</small>
+			<span id="error8"></span>
+			<br><br>
+
+            <label >Describe yourself</label>
+			<textarea name="comments" id="commnts" cols="40" rows="5" placeholder="A brief description of yourself..." minlength="50" maxlength="250">
+				
+			</textarea>
+			<br>
+
+           <button type="submit">Submit</button>
+		</form>
+		<br>
+
+		<footer></footer>
+	</div>
+
+
+<script type="text/javascript" src="./app.js" async></script>
+</body>
+</html>

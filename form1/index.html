@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen">
+</head>
+<body>
+
+<div class="banner">
+    <h1>HTML Form using inbuilt HTML form Validation</h1>
+</div> 
+
+<br><br>
+
+<div class="form">
+
+<br>
+   <!--My form goes here -->
+<form action=" " method="post" enctype="multipart/form-data">
+
+    <label>First Name</label>
+    <input type="text" minlength="2" maxlength="15" required autofocus="true">
+    <br> <br>
+
+    <label>Last Name</label>
+    <input type="text" minlength="2" maxlength="15" required>
+    <br>
+
+    <label>Username</label>
+    <input type="text" minlength="3" maxlength="15" required>
+    <br>
+
+    <label>Email</label>
+    <input type="email" autocomplete="on" required>
+    <br>
+
+    <label>age</label>
+    <input type="number" min="18" max="78" >
+    <br>
+
+    <label>Date :</label>
+    <input type="date" required>
+    <br>
+
+    <label>Upload your CV</label>
+    <input type="file" multiple required>
+    <br>
+
+    <label>First Name</label>
+    <input type="range" list="marks" step="20" value="70" >
+
+    <datalist id="marks">
+        <option value="0" label="0%">0</option>
+        <option value="20"></option>
+        <option value="40"></option>
+        <option value="60"></option>
+        <option value="80"></option>
+        <option value="100" label="100%"></option>
+    </datalist>
+    <br>
+
+    <label>Favourite colour? </label>
+    <input type="color" >
+    <br>
+
+    <label>Phone Number :</label>
+    <input type="tel" max="15" pattern="[07]-[0-9]{8}" required>
+    <br>
+
+    <label>Enter your portfolio site ...</label>
+    <input type="url" required>
+    <br>
+
+    <label>Enter your passport photo :</label>
+    <input type="file" accept="image/*" >
+    <br>
+
+    <label>Enter your Password :</label>
+    <input type="password" required autocomplete="on" >
+    <br>
+
+    <label>Confirm password :</label>
+    <input type="password" required="" >
+    <br>
+
+
+
+    <input type="submit" value="Submit">
+
+
+
+</form>
+
+
+</div>
+</body>
+</html>

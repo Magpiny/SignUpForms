@@ -1,0 +1,80 @@
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    --webkit-font-smoothing: antialiased;
+    background-color: #668BE4;
+    z-index: -2;
+    
+
+
+}
+
+.banner{
+    color: #F0B20D;
+    background-color: #B27E7E;
+    padding: 2%;
+    text-shadow: 4px 4px 6px #E01FBF;
+}
+
+.form{
+    position: relative;
+
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #285EDE;
+    left: 50%;
+    line-height: 0.9em;
+    border-radius: 8px;
+    border: 3px solid #2A14F0;
+    padding: 10%;
+    margin-bottom : 10%;
+    box-shadow: 10px 10px 10px 10px #044CF6, 2em 1em red;
+    z-index: 2;
+}
+label, input{
+    padding : 10px;
+    margin-bottom: 10px;
+
+}
+
+input{
+    border-radius: 8px;
+
+}
+
+input:required:focus{
+     width: 280px;
+     position: relative;
+     background-color: grey;
+     border-style: inset;
+     opacity: 0.8;
+     box-shadow: 4px 4px 8px;
+     z-index: -4;
+
+}
+
+input[type="submit"]:hover {
+    width 60px;
+    color: blue;
+    background-color:yellow;
+    border: 2px solid green;
+    box-shadow: 4px 4px 8px;
+
+}
+
+input:required:invalid{
+    background-color: #A0640F;
+    border: 2px solid #ff0000;
+}
+input:invalid::after{
+    content: " Kindly fill in ";
+}
+
+input:required:valid{
+    border: 2px solid #17F31E;
+    background-color: #61C46D;
+    box-shadow: 8px -8px 8px;
+}
